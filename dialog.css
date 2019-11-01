@@ -1,0 +1,93 @@
+/* background */
+.dialog_background{
+	position:absolute;
+	top:0px;
+	height:100%;
+	width:100%;
+	z-index:100;
+	touch-action: manipulation;/*タッチの反応を早くし、ズームを防ぐため*/
+}
+
+.dialog_background:last-child{
+	background-color:rgba(0,0,0,0.7);
+}
+
+.dialog{
+	position:absolute;
+	background-color:#ffffff;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+	padding: 3%;
+	max-height: 100%;
+	z-index: 7;/*ダイアログの上に「じょうたい」が出現しないように*/
+
+/*	max-width: 100%;*/
+/*	height:40%;width:60%;*/
+	background-image: url("./img/dialog_background.png");
+	background-size: 100% 100%;
+
+	touch-action: manipulation;/*タッチの反応を早くし、ズームを防ぐため*/
+}
+
+select{
+	height:100%;
+	width:50%;
+}
+
+ 	list-style: none;
+}
+
+#dialog_image{
+	/*position:absolute; top:40px; left:10px*/
+	/*height:40%;
+	width:60%;
+	#dialog_name{
+	*/
+	float: left;
+}
+
+#dialog_action1{
+	/*display: inline-block;
+　　　　　　vertical-align: middle;
+		/*position:absolute; top:40px; left:250px*/
+}
+#dialog_action2{
+	/*display: inline-block;
+　　　　　　vertical-align: middle;
+		/*position:absolute; top:40px; left:250px*/
+}
+#dialog_se{
+	/*display: inline-block;
+　　　　　　vertical-align: middle;
+		/*position:absolute; top:40px; left:250px*/
+}
+
+.dialog button, .dialog input[type="button"]{
+	min-height: 30px;
+}
+
+#image_box, #changing_image_box{
+	height:100px;
+	background-image: url("./img/touka.png");
+	max-width: 300px;
+}
+
+input[type=number]{
+	width:60px;
+}
+
+.dialog_header{
+	height: 25px;
+	width: 100%;
+    position: absolute;
+	top: 0;
+    left: 0;
+}
+
+.preset_imgs_box{
+	width: 300px;
+}
+
+#system_dialog_wall{
+	border: solid 1px gray;
+}

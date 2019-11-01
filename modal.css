@@ -1,0 +1,50 @@
+.modal {/*背景は透明色*/
+  display: none;/*初期状態は非表示*/
+  position: fixed;/*これ消したらモーダルが表示されない*/
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,255,0);/*透明*/
+}
+
+.modal>.modal-content>.modal-body{
+  /*background-color: rgba(233,255,222,1);*/
+}
+/*
+.modal-content{
+  width: 300px;
+  margin: 40% auto;
+}
+*/
+#modal-body{
+  position:absolute;
+  background-color: rgba(233,255,222,1);
+  width:200px;
+}
+
+#edit_character_name{
+  border-bottom:solid #cccccc;
+}
+
+#modal_group {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content_background{
+  /*background-image: url("./img/dialog_background.png");*/
+  background-image: url("./img/group_background.jpg");
+  height:600px;/*サイズ調整必須*/
+  width:800px;
+
+  /*画面中央*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  /*end*/
+
+}

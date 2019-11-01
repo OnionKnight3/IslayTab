@@ -1,0 +1,28 @@
+#system{
+	display: none;
+}
+
+/*input type rangeが大きくなる*/
+input[type="range"]::-webkit-slider-thumb {
+		cursor: pointer
+    width: 35px;
+    height: 35px;
+}
+
+
+/* #system_content{
+	text-align: center;
+	width: 300px;
+    height: 300px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: visible;
+}
+
+#system_content > *{
+	margin-bottom: 20px;
+} */

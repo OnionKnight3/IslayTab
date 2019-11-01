@@ -1,0 +1,142 @@
+.dialog > .group_members{
+	width: 70vw;
+	height: 70vh;
+	overflow-y: auto;
+}
+
+.dialog > .group_members > .maru{
+	position: relative;
+	box-shadow: none;
+	display: inline-block;
+}
+
+.dialog > .group_members > .maru > .close_button{
+    position: absolute;
+	  right: -10px;/*変更した*/
+    top: -10px;/*変更した*/
+		height: 50px;/*変更した*/
+}
+
+.dialog > .group_members > .maru > .z_index_input{
+    position: absolute;
+		left: 0;
+    top: 0;
+}
+
+/* input type="number" の右側のインクリメントデクリメントボタンを消す */
+.z_index_input::-webkit-outer-spin-button,
+.z_index_input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.z_index_input{
+    -moz-appearance:textfield;
+}
+
+.select {
+	overflow: hidden;
+	width: 200px;
+	height:40px;
+	/*width:20%;*/
+	/*margin: 2em auto;*/
+	text-align: center;
+}
+.select select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.select select::-ms-expand {
+    display: none;
+}
+.select.box {
+	position: relative;
+	border-radius: 2px;
+	border: 2px solid #da3c41;
+  border-radius: 50px;
+	background: #ffffff;
+}
+.select.box::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.8em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #da3c41;
+	pointer-events: none;
+}
+.select.box select {
+	padding: 8px 38px 8px 8px;
+	color: #da3c41;
+}
+
+#maru_detail{
+	position:absolute;
+	top:50px;
+	left:100px;
+}
+
+#display_maru{
+	position:absolute;
+	top:180px;
+	left:80px;
+	height:50px;
+}
+#display_character{
+	position:absolute;
+	top:280px;
+	left:80px;
+	height:50px;
+}
+
+div.maru_clone{
+	height:100px;
+	width:100px;
+	border:solid 3px #000000;
+	position:absolute; /*これがあると「じょうたい」が浮いてしまう*/
+	border-radius: 100%;
+	text-align:center;
+	background-color:#ffffff;
+	overflow:visible;
+
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+}
+/*div.maru_clone:hover, div.maru_clone:active{
+	background-color:#ffff00;/*黄色
+}*/
+div.maru_clone[selected='yes']{
+	border-style: outset;
+	border-color: red;
+}
+div.maru_clone > span.maru_name{
+	display:block;
+}
+div.maru_clone > img.maru_img{
+	margin:10px;
+	margin-bottom:5px;
+}
+
+#ok_button{
+	position:absolute;
+	top:80%;
+	left:50%;
+}
+
+
+input.ok_button{
+	height:50px;
+	width:50px;
+}
